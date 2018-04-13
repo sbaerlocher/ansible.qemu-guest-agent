@@ -1,2 +1,12 @@
 ---
 # handlers file for sbaerlocher.qemu-guest-agent
+
+- name: restart Qemu Guest Agent
+  service:
+    name: "{{ qemu_guest_agent_service_name }}"
+    state: restarted
+
+- name: enabled Qemu Guest Agent
+  service:
+    name: "{{ qemu_guest_agent_service_name }}"
+    enabled: true

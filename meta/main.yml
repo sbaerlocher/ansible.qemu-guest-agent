@@ -1,15 +1,11 @@
 ---
 
 galaxy_info:
-  author:
-  description:
-  company:
-  license: MIT
-  min_ansible_version: 2
+  author: Simon Baelocher <sbaerlocher@sbaerlocher.ch>
+  description: Install Qemu Guest Agent
+  license: license (MIT)
+  min_ansible_version: 2.5
   platforms:
-    - name: Archlinux
-      versions:
-        - all
     - name: EL
       versions:
         - 5
@@ -28,7 +24,6 @@ galaxy_info:
     - name: Debian
       versions:
         - wheezy
-
-  galaxy_tags: []
-
+  categories:
+    - system
 dependencies: []
