@@ -4,6 +4,8 @@
 
 ## Description
 
+Ansible role for installing Qemu Guest Agent on installs RHEL/CentOS.
+
 ## Installation
 
 ```bash
@@ -12,14 +14,12 @@ ansible-galaxy install sbaerlocher.qemu-guest-agent
 
 ## Requirements
 
-## Role Variables
-
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| | | |
-| | | |
+This role requires Ansible 2.5 or higher, and platform requirements are listed
+in the metadata file.
 
 ## Dependencies
+
+None
 
 ## Example Playbook
 
@@ -31,6 +31,10 @@ ansible-galaxy install sbaerlocher.qemu-guest-agent
 
 ## Changelog
 
+### 1.0
+
+* initial release
+
 ## Author
 
 * [Simon Bärlocher](https://sbaerlocher.ch)
@@ -41,4 +45,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2017, Simon Bärlocher
+(c) 2018, Simon Bärlocher
