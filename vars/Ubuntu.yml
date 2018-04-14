@@ -1,2 +1,5 @@
 ---
 # vars file for sbaerlocher.qemu-guest-agent
+
+qemu_package: qemu-guest-agent
+qemu_guest_agent_service_name: qemu-guest-agent

@@ -19,7 +19,7 @@ in the metadata file.
 
 ## Dependencies
 
-None
+To install the agent for Windows, the role sbaerlocher.virtio must be installed.
 
 ## Example Playbook
 
@@ -30,6 +30,10 @@ None
 ```
 
 ## Changelog
+
+### 1.1
+
+* add Windows Support
 
 ### 1.0
 

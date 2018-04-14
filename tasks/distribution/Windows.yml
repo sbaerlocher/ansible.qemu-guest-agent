@@ -1,0 +1,15 @@
+---
+# tasks file for sbaerlocher.qemu-guest-agent
+
+- name: "{{ ansible_distribution | lower }} | include sbaerlocher.virtio role"
+  include_role:
+    name: sbaerlocher.virtio
+  tags:
+    - packages
+
+- name: "{{ ansible_distribution | lower }} | install Qemu Guest Agent"
+  win_package:
+    path: "{{ virtio_win_iso_path }}\\guest-agent\\qemu-ga-x64.msi"
+    creates_path: "{{ ansible_env['ProgramFiles'] }}\\qemu-ga"
+  tags:
+    - packages
