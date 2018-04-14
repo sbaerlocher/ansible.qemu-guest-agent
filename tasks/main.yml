@@ -18,14 +18,20 @@
     - configuration
     - packages
 
-- name: install Qemu Guest Agent
-  become: true
-  package:
-    name: "{{ item }}"
-  with_items: "{{ qemu_package }}"
-  when: ansible_system_vendor == 'qemu'
-  notify:
-    - enabled Qemu Guest Agent
-    - restart Qemu Guest Agent
+- name: include distribution tasks
+  include_tasks: "{{ loop_distribution }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+        - "{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+        - "{{ ansible_distribution }}.yml"
+        - "{{ ansible_os_family }}.yml"
+        - "{{ ansible_system }}.yml"
+        - "defaults.yml"
+      paths:
+        - "distribution"
+  loop_control:
+    loop_var: loop_distribution
   tags:
+    - configuration
     - packages

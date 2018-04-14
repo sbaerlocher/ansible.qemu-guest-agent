@@ -1,0 +1,8 @@
+---
+# tasks file for sbaerlocher.qemu-guest-agent
+
+- name: Message
+  debug:
+    msg: "Your {{ ansible_system }} is not supported"
+  tags:
+    - packages
