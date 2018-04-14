@@ -30,5 +30,4 @@ galaxy_info:
   categories:
     - system
 
-dependencies:
-  - sbaerlocher.virtio
+dependencies: []
