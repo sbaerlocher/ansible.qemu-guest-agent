@@ -1,7 +1,7 @@
 ---
 # tasks file for sbaerlocher.qemu-guest-agent
 
-- name: "{{ ansible_distribution | lower }} | install Qemu Guest Agent"
+- name: "linux : install Qemu Guest Agent"
   become: true
   package:
     name: "{{ item }}"
