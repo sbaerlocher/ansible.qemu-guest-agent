@@ -1,9 +1,10 @@
 ---
 
 galaxy_info:
-  author: Simon Baelocher <sbaerlocher@sbaerlocher.ch>
-  description: Install Qemu Guest Agent
-  license: license (MIT)
+  author: "Simon Baerlocher"
+  company: "sbaerlo.ch/er"
+  description: "Ansible role for installing Qemu Guest Agent on RHEL/CentOS and Debian/Ubuntu or Windows."
+  license: MIT
   min_ansible_version: 2.5
   platforms:
     - name: EL

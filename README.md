@@ -4,7 +4,7 @@
 
 ## Description
 
-Ansible role for installing Qemu Guest Agent on installs RHEL/CentOS.
+Ansible role for installing Qemu Guest Agent on RHEL/CentOS and Debian/Ubuntu or Windows.
 
 ## Installation
 
