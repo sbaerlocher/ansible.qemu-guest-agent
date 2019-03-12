@@ -28,7 +28,7 @@ galaxy_info:
     - name: Windows
       versions:
         - all
-  categories:
+  galaxy_tags:
     - system
 
 dependencies: []
