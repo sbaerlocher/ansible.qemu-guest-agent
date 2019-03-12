@@ -55,4 +55,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2018, Simon Bärlocher
+(c) 2019, Simon Bärlocher
