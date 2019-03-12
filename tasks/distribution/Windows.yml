@@ -9,7 +9,7 @@
 
 - name: "windows : install Qemu Guest Agent"
   win_package:
-    path: "{{ virtio_win_iso_path }}\\guest-agent\\qemu-ga-x64.msi"
+    path: "{{ virtio_win_iso_path }}\\guest-agent\\qemu-ga-x86_64.msi"
     creates_path: "{{ ansible_env['ProgramFiles'] }}\\qemu-ga"
   when: (ansible_virtio_version | default()) != virtio_version
   tags:
