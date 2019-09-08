@@ -1,11 +1,11 @@
 ---
 # tasks file for sbaerlocher.qemu-guest-agent
 
-- name: "linux : install Qemu Guest Agent"
+- name: 'linux : install Qemu Guest Agent'
   become: true
   package:
-    name: "{{ item }}"
-  with_items: "{{ qemu_package }}"
+    name: '{{ item }}'
+  with_items: '{{ qemu_package }}'
   when: ansible_system_vendor == 'QEMU'
   notify:
     - enabled Qemu Guest Agent

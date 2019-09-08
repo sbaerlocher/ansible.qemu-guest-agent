@@ -1,11 +1,9 @@
 ---
-
 galaxy_info:
-  author: "Simon Baerlocher"
-  company: "sbaerlo.ch/er"
-  description: "Ansible role for installing Qemu Guest Agent on RHEL/CentOS and Debian/Ubuntu or Windows."
+  author: 'Simon Baerlocher'
+  description: 'Role for installing Qemu Guest Agent on Linux or Windows'
   license: MIT
-  min_ansible_version: 2.5
+  min_ansible_version: 2.8
   platforms:
     - name: EL
       versions:
@@ -31,4 +29,5 @@ galaxy_info:
   galaxy_tags:
     - system
 
-dependencies: []
+dependencies:
+  - role: arillso.repositorien
