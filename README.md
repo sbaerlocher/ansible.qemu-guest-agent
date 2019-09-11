@@ -1,6 +1,6 @@
 # Ansible Role: qemu-guest-agent
 
-[![Build Status](https://img.shields.io/travis/sbaerlocher/ansible.qemu-guest-agent.svg?branch=master&style=popout-square)](https://travis-ci.org/sbaerlocher/ansible.qemu-guest-agent) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-qemu--guest--agent-blue.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/qemu-guest-agent) [![Ansible Role](https://img.shields.io/ansible/role/d/25023.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/qemu-guest-agent)
+[![Build Status](https://img.shields.io/travis/sbaerlocher/ansible.qemu-guest-agent.svg?branch=master&style=popout-square)](https://travis-ci.org/sbaerlocher/ansible.qemu-guest-agent) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-qemu--guest--agent-blue.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/qemu-guest-agent) [![Ansible Role](https://img.shields.io/ansible/role/d/25023.svg?style=popout-square)](https://galaxy.ansible.com/sbaerlocher/qemu-guest-agent)
 
 ## Description
 
@@ -16,7 +16,7 @@ ansible-galaxy install sbaerlocher.qemu-guest-agent
 
 ## Requirements
 
-This role requires Ansible 2.5 or higher, and platform requirements are listed
+This role requires Ansible 2.8 or higher, and platform requirements are listed
 in the metadata file.
 
 ## Dependencies
@@ -28,26 +28,12 @@ To install the agent for Windows, the role sbaerlocher.virtio must be installed.
 ```yml
 - hosts: all
   roles:
-     - sbaerlocher.qemu-guest-agent
+    - sbaerlocher.qemu-guest-agent
 ```
-
-## Changelog
-
-### 1.2
-
-Changing the path to the msi. 
-
-### 1.1
-
-* add Windows Support
-
-### 1.0
-
-* initial release
 
 ## Author
 
-* [Simon Bärlocher](https://sbaerlocher.ch)
+- [Simon Bärlocher](https://sbaerlocher.ch)
 
 ## License
 
