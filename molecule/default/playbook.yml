@@ -1,8 +1,5 @@
 ---
 - name: Converge
   hosts: all
-  pre_tasks:
-    - name: install arillso.repositorien role
-      shell: ansible-galaxy install arillso.repositorien
   roles:
     - role: sbaerlocher.qemu-guest-agent
